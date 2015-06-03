@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14C1514" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="AHBusiness" representedClassName="AHBusiness" syncable="YES">
+        <attribute name="capacity" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="occupancy" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="AHGroup" representedClassName="AHGroup" syncable="YES">
+        <attribute name="id" attributeType="Integer 64" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="isPrivate" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="type" attributeType="Integer 16" defaultValueString="1" syncable="YES"/>
+        <relationship name="creator" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AHUser" inverseName="createdGroups" inverseEntity="AHUser" syncable="YES"/>
+        <relationship name="users" optional="YES" toMany="YES" minCount="1" deletionRule="Nullify" destinationEntity="AHGroupUser" inverseName="group" inverseEntity="AHGroupUser" syncable="YES"/>
+    </entity>
+    <entity name="AHGroupUser" representedClassName="AHGroupUser" syncable="YES">
+        <attribute name="isAdmin" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="joinDate" attributeType="Date" syncable="YES"/>
+        <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AHGroup" inverseName="users" inverseEntity="AHGroup" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AHUser" inverseName="publicGroups" inverseEntity="AHUser" syncable="YES"/>
+    </entity>
+    <entity name="AHLocation" representedClassName="AHLocation" syncable="YES">
+        <attribute name="isVenue" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="latitude" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AHUser" inverseName="homeLocation" inverseEntity="AHUser" syncable="YES"/>
+    </entity>
+    <entity name="AHUser" representedClassName="AHUser" syncable="YES">
+        <attribute name="dateCreated" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="emailAddress" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="facebookId" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="firstName" attributeType="String" syncable="YES"/>
+        <attribute name="hasBusiness" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" indexed="YES" syncable="YES"/>
+        <attribute name="lastName" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" maxValueString="20" indexed="YES" syncable="YES"/>
+        <relationship name="createdGroups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AHGroup" inverseName="creator" inverseEntity="AHGroup" syncable="YES"/>
+        <relationship name="homeLocation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AHLocation" inverseName="owner" inverseEntity="AHLocation" syncable="YES"/>
+        <relationship name="publicGroups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AHGroupUser" inverseName="user" inverseEntity="AHGroupUser" syncable="YES"/>
+        <fetchedProperty name="fetchedProperty" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="AHUser"/>
+        </fetchedProperty>
+    </entity>
+    <elements>
+        <element name="AHBusiness" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="AHGroup" positionX="0" positionY="0" width="128" height="135"/>
+        <element name="AHGroupUser" positionX="0" positionY="0" width="128" height="105"/>
+        <element name="AHLocation" positionX="0" positionY="0" width="128" height="120"/>
+        <element name="AHUser" positionX="0" positionY="0" width="128" height="254"/>
+    </elements>
+</model>
