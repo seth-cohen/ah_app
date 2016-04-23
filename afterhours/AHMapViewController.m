@@ -17,13 +17,18 @@
 @property (strong, nonatomic) DownPicker *pickerView;
 @property (weak, nonatomic) IBOutlet UITextField *groupSelectInput;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomConstraint;
+
+
 - (IBAction)handleSettingButton:(id)sender;
+- (IBAction)checkIn:(id)sender;
+
 
 @end
 
 @implementation AHMapViewController
 
 NSMutableArray *groupNames;
+GMSPlacePicker *_placePicker;
 
 - (void)viewDidLoad {
   [super viewDidLoad];
@@ -98,6 +103,35 @@ NSMutableArray *groupNames;
 
 - (IBAction)handleSettingButton:(id)sender {
   [self.mainController handleMenuSlide];
+}
+
+- (IBAction)checkIn:(id)sender {
+  GMSVisibleRegion visibleRegion = self.mapView.projection.visibleRegion;
+  GMSCoordinateBounds *viewport = [[GMSCoordinateBounds alloc] initWithCoordinate:visibleRegion.farLeft
+                                                                       coordinate:visibleRegion.nearRight];
+  GMSPlacePickerConfig *config = [[GMSPlacePickerConfig alloc] initWithViewport:viewport];
+  _placePicker = [[GMSPlacePicker alloc] initWithConfig:config];
+  
+  [_placePicker pickPlaceWithCallback:^(GMSPlace *place, NSError *error) {
+    if (error != nil) {
+      NSLog(@"Pick Place error %@", [error localizedDescription]);
+      return;
+    }
+    
+    if (place != nil) {
+      
+      NSLog(@"Place selected: %@", place.name);
+      
+      GMSMarker *marker = [GMSMarker markerWithPosition:place.coordinate];
+      marker.title = place.name;
+      marker.snippet = place.formattedAddress;
+      marker.map = self.mapView;
+      
+    } else {
+      NSLog(@"No place selected");
+    }
+    
+  }];
 }
 
 @end

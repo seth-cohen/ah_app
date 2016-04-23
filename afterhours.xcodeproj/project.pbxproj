@@ -38,8 +38,6 @@
 		5D8FD6421B0AB738003DC2CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D8FD6411B0AB738003DC2CE /* Images.xcassets */; };
 		5D8FD6451B0AB738003DC2CE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D8FD6431B0AB738003DC2CE /* LaunchScreen.xib */; };
 		5D8FD6511B0AB738003DC2CE /* afterhoursTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8FD6501B0AB738003DC2CE /* afterhoursTests.m */; };
-		5D8FD65E1B0AB781003DC2CE /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8FD65D1B0AB781003DC2CE /* GoogleMaps.framework */; };
-		5D8FD6601B0AB790003DC2CE /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5D8FD65F1B0AB790003DC2CE /* GoogleMaps.bundle */; };
 		5D8FD6621B0AB7AC003DC2CE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8FD6611B0AB7AC003DC2CE /* SystemConfiguration.framework */; };
 		5D8FD6641B0AB7B6003DC2CE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8FD6631B0AB7B6003DC2CE /* QuartzCore.framework */; };
 		5D8FD6661B0AB7BD003DC2CE /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8FD6651B0AB7BD003DC2CE /* OpenGLES.framework */; };
@@ -60,6 +58,7 @@
 		5DC6E8361B16A5350065E397 /* AHUserTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC6E8351B16A5350065E397 /* AHUserTableCell.m */; };
 		5DC6E8391B1955410065E397 /* AHLocationSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC6E8381B1955410065E397 /* AHLocationSearchController.m */; };
 		5DC6E83C1B1956050065E397 /* AHLocationSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC6E83B1B1956050065E397 /* AHLocationSearch.m */; };
+		C27E3A58452B6ACB901A0E9B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C92E28C72A819C076A687C80 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +72,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		075295EA7FF6E5B909CF0200 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5D37A2961B0C09F5005D65C0 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../Libs/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		5D37A2981B0C142B005D65C0 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../Libs/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		5D37A2991B0C142B005D65C0 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../Libs/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
@@ -131,8 +131,6 @@
 		5D8FD64A1B0AB738003DC2CE /* afterhoursTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = afterhoursTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D8FD64F1B0AB738003DC2CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D8FD6501B0AB738003DC2CE /* afterhoursTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = afterhoursTests.m; sourceTree = "<group>"; };
-		5D8FD65D1B0AB781003DC2CE /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
-		5D8FD65F1B0AB790003DC2CE /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		5D8FD6611B0AB7AC003DC2CE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		5D8FD6631B0AB7B6003DC2CE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5D8FD6651B0AB7BD003DC2CE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -160,6 +158,8 @@
 		5DC6E8381B1955410065E397 /* AHLocationSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHLocationSearchController.m; sourceTree = "<group>"; };
 		5DC6E83A1B1956050065E397 /* AHLocationSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHLocationSearch.h; sourceTree = "<group>"; };
 		5DC6E83B1B1956050065E397 /* AHLocationSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHLocationSearch.m; sourceTree = "<group>"; };
+		AF0A8BCAD967A5143405BCAC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C92E28C72A819C076A687C80 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,7 +182,7 @@
 				5D8FD6641B0AB7B6003DC2CE /* QuartzCore.framework in Frameworks */,
 				5D37A2971B0C09F5005D65C0 /* FBSDKCoreKit.framework in Frameworks */,
 				5D8FD6621B0AB7AC003DC2CE /* SystemConfiguration.framework in Frameworks */,
-				5D8FD65E1B0AB781003DC2CE /* GoogleMaps.framework in Frameworks */,
+				C27E3A58452B6ACB901A0E9B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +273,7 @@
 				5D8FD6301B0AB738003DC2CE /* afterhours */,
 				5D8FD64D1B0AB738003DC2CE /* afterhoursTests */,
 				5D8FD62F1B0AB738003DC2CE /* Products */,
+				AFC9FB05F682FEA638B1E5C8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -348,8 +349,7 @@
 				5D8FD6651B0AB7BD003DC2CE /* OpenGLES.framework */,
 				5D8FD6631B0AB7B6003DC2CE /* QuartzCore.framework */,
 				5D8FD6611B0AB7AC003DC2CE /* SystemConfiguration.framework */,
-				5D8FD65F1B0AB790003DC2CE /* GoogleMaps.bundle */,
-				5D8FD65D1B0AB781003DC2CE /* GoogleMaps.framework */,
+				C92E28C72A819C076A687C80 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -385,6 +385,15 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		AFC9FB05F682FEA638B1E5C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF0A8BCAD967A5143405BCAC /* Pods.debug.xcconfig */,
+				075295EA7FF6E5B909CF0200 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -392,9 +401,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D8FD6541B0AB738003DC2CE /* Build configuration list for PBXNativeTarget "afterhours" */;
 			buildPhases = (
+				75492AAB9C202CBA17DA5FE9 /* Check Pods Manifest.lock */,
 				5D8FD62A1B0AB738003DC2CE /* Sources */,
 				5D8FD62B1B0AB738003DC2CE /* Frameworks */,
 				5D8FD62C1B0AB738003DC2CE /* Resources */,
+				2D8251B5A8F2D2130597E84F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -469,7 +480,6 @@
 				5D8FD6451B0AB738003DC2CE /* LaunchScreen.xib in Resources */,
 				5D8FD6421B0AB738003DC2CE /* Images.xcassets in Resources */,
 				5D8FD67F1B0AB82C003DC2CE /* downArrow.png in Resources */,
-				5D8FD6601B0AB790003DC2CE /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +491,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D8251B5A8F2D2130597E84F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75492AAB9C202CBA17DA5FE9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5D8FD62A1B0AB738003DC2CE /* Sources */ = {
@@ -643,8 +686,10 @@
 		};
 		5D8FD6551B0AB738003DC2CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF0A8BCAD967A5143405BCAC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -658,8 +703,10 @@
 		};
 		5D8FD6561B0AB738003DC2CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 075295EA7FF6E5B909CF0200 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
