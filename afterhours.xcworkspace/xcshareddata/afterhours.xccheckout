@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A9835071-10C8-4D42-9AEA-3663D3BE76ED</string>
+	<key>IDESourceControlProjectName</key>
+	<string>afterhours</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6CFD9468235B819C56B9E5C2232E68913471D958</key>
+		<string>https://bitbucket.org/seth_cohen/after_hours_app.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>afterhours.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6CFD9468235B819C56B9E5C2232E68913471D958</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/seth_cohen/after_hours_app.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6CFD9468235B819C56B9E5C2232E68913471D958</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6CFD9468235B819C56B9E5C2232E68913471D958</string>
+			<key>IDESourceControlWCCName</key>
+			<string>afterhours</string>
+		</dict>
+	</array>
+</dict>
+</plist>
